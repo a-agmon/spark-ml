@@ -9,7 +9,7 @@ import org.apache.spark.sql.types.DoubleType
 object TestMe extends App{
 
   val spark = SparkSession.builder()
-    .appName("CSFI test me")
+    .appName("catboost Prediction")
     .config("spark.master", "local")
     .config("spark.driver.host","127.0.0.1")
     .config("spark.driver.bindAddress","127.0.0.1")
