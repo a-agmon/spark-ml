@@ -11,6 +11,6 @@ if __name__ == '__main__':
     
     record_list = get_record_list()
     
-    proc_bag = db.from_sequence(scan_windows, npartitions=100).map(run_ml_algorithem)
+    proc_bag = db.from_sequence(record_list, npartitions=100).map(run_ml_algorithem)
     
     proc_bag.compute()
