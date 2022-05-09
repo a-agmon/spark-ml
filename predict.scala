@@ -1,4 +1,4 @@
-package com.synamedia.analytics
+package com.aagmon.examples
 
 
 import org.apache.spark.sql.{Column, DataFrame, SparkSession}
@@ -17,8 +17,8 @@ object TestMe extends App{
 
   import spark.implicits._
 
-  val fileUrl:String = "/Users/aagmon/work/synamedia/dataset.csv"
-  val modelPath:String = "/Users/aagmon/work/synamedia/catboost_model.cbm"
+  val fileUrl:String = "/********/dataset.csv"
+  val modelPath:String = "/**********/catboost_model.cbm"
 
   val rawFeaturesDF = spark.read
     .format("csv")
